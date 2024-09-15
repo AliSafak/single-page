@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1110px;
+  margin-top: 34px;
+  margin-inline:auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-right-side  h3 {
+  padding: 14px  45px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+
+}
+
+
+.header-right-side a {
+  text-decoration: none;
+}
+
+.header-right-side a h3:hover , .header-right-side a h3:hover {
+  background-color: #755cde;
+}
+
+.hero-page {
+  margin-top: 66px;
+  text-align: center;
+  width: 752px;
+  margin-inline: auto;
+}
+
+.hero-page h1 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 56px;
+  font-weight:  700;
+  line-height: 70.56px;
+}
+
+.hero-page p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgba(122, 116, 110, 1);
+  margin-bottom: 80px;
+}
+/* GRID KISMI BURADA BULUNMAKTA */
+.header-down {
+  display: grid;
+  gap: 24px;
+  grid-template-areas:
+  "graphic graphic ui-ux apps photography photography"
+  "graphic graphic illustrations illustrations motion motion " ;
+}
+
+.header-graphic {
+  position: relative;
+  width: 354px;
+  height: 364px;
+  background-color: #755cde;
+  border-radius: 10px;
+  grid-area: graphic;
+}
+
+.header-graphic-flex {
+  display: flex;
+  gap: 24px;
+}
+/* buradaki ozellik ayni oldugu icin hepsi icin kullanabilirim */
+.header-graphic img ,
+.header-ui-ux img ,
+.header-apps img  ,
+.header-photography  img ,
+.header-illustrations img  ,
+.header-motion img 
+{
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.header-graphic h2 ,
+.header-ui-ux h2 ,
+.header-apps h2 ,
+.header-photography h2  ,
+.header-illustrations h2 ,
+.header-motion h2
+{
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.24px;
+  color: white;
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+
+}
+
+.header-ui-ux {
+  position: relative;
+  width: 163px;
+  height: 182px;
+  background-color: #f6a560;
+  border-radius: 10px;
+  grid-area: ui-ux;
+}
+
+.header-apps {
+  position: relative;
+  width: 164px;
+  height: 182px;
+  border-radius: 10px;
+  background-color: #f39e9e;
+  border-radius: 10px;
+  grid-area: apps;
+
+}
+
+.header-photography {
+  position: relative;
+  width: 354px;
+  height: 182px;
+  background-color: #61C4B7;
+  border-radius: 10px;
+  grid-area: photography;
+
+}
+
+.header-illustrations {
+  position: relative;
+  width: 354px;
+  height: 158px;  
+  background-color: #EB7565;
+  border-radius: 10px;
+  grid-area: illustrations;
+}
+
+.header-motion {
+  position: relative;
+  width: 354px;
+  height: 158px;
+  background-color:#552049 ;
+  border-radius: 10px;
+  grid-area: motion;
+}
+
+
+/*burada orta kisimda ugrastigim display kismi bitiyor. */
+
+/* https://developer.mozilla.org/en-US/play bu siteden yola ciktim ve yatayda resimlerle gezmeyi bu sayede yaptim.*/
+.scroll-pic h1 {
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40.32px;
+  margin-top: 88px;
+}
+
+.mandatory-scroll-snapping {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 20px;
+
+}
+
+.container.x {
+  width: 100%;
+  height: 100%;
+  flex-flow: row nowrap;
+  overflow-y: hidden;
+}
+
+
+
+.site-mid-part {
+  display: flex;
+  gap: 125px;
+  margin-top: 136px;
+}
+
+.site-mid-part h1 {
+  margin-top:70px ;
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50.4px;
+}
+
+.site-mid-part p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 34px;
+  color: rgba(122, 116, 110, 1);
+}
+
+
+.site-mid-part h3 , .footer-top h3 {
+  margin-top: 32px;
+  border-radius: 25px;
+  display: inline-block;
+  color: white;
+  padding: 14px 45px ;
+  background-color: rgba(235, 117, 101, 1);
+}
+
+.footer-top-left-side {
+  width: 540px;
+}
+
+.footer-top {
+  border-radius: 10px;
+  width: 1110px;
+  height: 320px;
+  display: flex;
+  gap:182px ;
+  background-color: black;
+  margin-block:88px 56px;
+}
+
+.footer-top h1 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50.4px;
+  color: white;
+  padding-left: 65px;
+  padding-top: 81px;
+}
+
+.footer-top p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: white;
+  padding-left: 65px;
+  padding-top: 25px;
+}
+
+.footer-top-right-side {
+  padding-top: 100px; 
+}
+
+.footer-top-right-side h3 , .site-mid-part a h3 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  border-radius: 50px;
+}
+
+.footer-top-right-side h3:hover , .site-mid-part a h3:hover {
+  background-color: white;
+  background-color: #f6a660;
+  cursor: pointer;
+} 
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
